@@ -1,0 +1,7 @@
+.runtime/
+.test-runtime/
+.build/
+__pycache__/
+*.pyc
+node_modules/
+.venv/

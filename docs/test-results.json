@@ -1,0 +1,137 @@
+{
+  "recorded_at": 1792197098.101905,
+  "race": {
+    "seat": "A1",
+    "requests": 12,
+    "successes": 1,
+    "conflicts": 11,
+    "errors": 0,
+    "average_ms": 103.7,
+    "results": [
+      {
+        "guest": 1,
+        "node": 1,
+        "latency_ms": 105.52,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 2,
+        "node": 2,
+        "latency_ms": 100.76,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 3,
+        "node": 3,
+        "latency_ms": 103.05,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 4,
+        "node": 1,
+        "latency_ms": 108.89,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 5,
+        "node": 2,
+        "latency_ms": 103.73,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 6,
+        "node": 3,
+        "latency_ms": 101.45,
+        "ok": true,
+        "booking": {
+          "id": "9902C5C2F6",
+          "seat": "A1",
+          "name": "Race guest 6",
+          "request_id": "542b12773d9a41419c87f3e41507647f",
+          "via": 3,
+          "coordinator": 3,
+          "time": 1792197068.955191
+        },
+        "copies": 3
+      },
+      {
+        "guest": 7,
+        "node": 1,
+        "latency_ms": 102.28,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 8,
+        "node": 2,
+        "latency_ms": 104.58,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 9,
+        "node": 3,
+        "latency_ms": 104.39,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 10,
+        "node": 1,
+        "latency_ms": 102.09,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 11,
+        "node": 2,
+        "latency_ms": 104.43,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      },
+      {
+        "guest": 12,
+        "node": 3,
+        "latency_ms": 102.76,
+        "ok": false,
+        "error": "Seat A1 is already booked",
+        "conflict": true
+      }
+    ],
+    "time": 1792197068.9798129
+  },
+  "failover": {
+    "old_leader": 3,
+    "new_leader": 2,
+    "duration_ms": 4430.6,
+    "bookings_preserved": 2,
+    "time": 1792197073.5811756
+  },
+  "scope": "Local fixed-membership crash/recovery, no network partitions",
+  "checks": [
+    "highest-ID election",
+    "12-request race",
+    "idempotency",
+    "input validation",
+    "coordinator crash",
+    "higher-ID recovery",
+    "lower-ID recovery",
+    "quorum rejection",
+    "full restart durability"
+  ]
+}
